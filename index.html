@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png" />
+
+    <title>
+      Frontend Mentor | Newsletter sign-up form with success message
+    </title>
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <!-- <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style> -->
+  </head>
+  <body>
+    <!-- Sign-up form start -->
+    <div class="container">
+      <div class="container-left">
+        <h1>Stay updated!</h1>
+        <p>Join 60,000+ product managers receiving monthly updates on:</p>
+        <ul>
+          <li>
+            <img src="/assets/images/icon-list.svg" alt="success icon" />
+            <span>Product discovery and building what matters</span>
+          </li>
+          <li>
+            <img src="/assets/images/icon-list.svg" alt="success icon" />
+            <span>Measuring to ensure updates are a success</span>
+          </li>
+          <li>
+            <img src="/assets/images/icon-list.svg" alt="success icon" />
+            <span>And much more!</span>
+          </li>
+        </ul>
+        <form class="cta-form" novalidate>
+          <div class="form-row">
+            <div class="input-header">
+              <label for="email">Email address</label>
+              <span class="error"></span>
+            </div>
+            <input type="email" id="email" placeholder="email@company.com" />
+          </div>
+          <button class="submit-btn" id="submitButton">
+            Subscribe to monthly newsletter
+          </button>
+        </form>
+      </div>
+      <!-- Sign-up form end -->
+      <div class="container-right">
+        <div class="image" role="img"></div>
+      </div>
+    </div>
+
+    <!-- Success message start -->
+    <div class="modal-container">
+      <div class="modal-content">
+        <div>
+          <img src="/assets/images/icon-success.svg" alt="success icon" />
+          <h2>Thanks for subscribing!</h2>
+          <p>
+            A confirmation email has been sent to
+            <strong>ash@loremcompany.com</strong>. Please open it and click the
+            button inside to confirm your subscription.
+          </p>
+        </div>
+        <button class="close-modal-btn" id="closeButton">
+          Dismiss message
+        </button>
+      </div>
+    </div>
+    <!-- Success message end -->
+
+    <!-- 
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </div> -->
+    <script src="script.js"></script>
+  </body>
+</html>
